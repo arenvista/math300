@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs}
+\usepackage{latexsym,epsf,epsfig}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry}
+%The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+
+\usepackage{hyperref}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+
+
+%The above is the preamble. This specifies the basics about the file, including which packages we'll be using, the size of the font, and the general structure of the document. We won't need to mess with much of this, at least for awhile.
+
+\begin{document}
+
+\noindent \today
+
+\thispagestyle{empty} \centerline{\bf {LaTeX Template}} \vskip 0.1in
+\centerline{\bf {MATH 300, Fall 2023}}
+
+
+\vskip 0.2in
+
+ \noindent This is a very brief resource for LaTeX in our class. It is intended that you look at the output of this file (the .pdf you are reading) and also the source (a .tex file which can be opened in any text editor or online in Overleaf---see below). 
+ \vskip.2cm
+ First, some resources for beginning with LaTeX:
+ \begin{itemize}
+ \item (Downloading LaTeX) This link will allow you to download a (large) LaTeX package for your computer, no matter what system you run: \url{https://latex-project.org/ftp.html}.
+ \item (Using LaTeX in the Cloud) This link will allow you to create an account (for free) and use LaTeX hosted on a server. This has become the most popular way to use TeX. \url{https://www.overleaf.com/}.
+ \item (Finding Difficult Symbols) This link allows you to draw in a symbol and it returns the appropriate LaTeX source for that symbol. A life-saver: \url{http://detexify.kirelabs.org/classify.html}
+ \end{itemize}
+ \vskip.4cm
+ In the statements you find below, you should be able to ``mine" the source code for the first few assignments. 
+\begin{itemize}
+\item $s \in S$;~~$r \notin S$;~~$S\subseteq R$;~~$S\subsetneq P$;~~$P\subset R$ (Let's agree to use $\subset$ and $\subseteq$ in this class.) \vskip.5cm
+\item If $p$ then $q$, ~~$p ~\implies q$; ~~ $p$ if and only if $q$, ~~$p \iff q$\vskip.5cm
+\item $\forall~x~~\exists~ P(x)$ such that $$\exists! ~S \subsetneq P(x),~~\text{and}~~S \neq \emptyset$$\vskip.5cm
+\item A cool ``set": 
+$$\mathscr S \equiv \{ S ~\text{a set}~:~S \notin S\}$$
+\vskip.5cm
+\item Let $S$ be a set such that $S \neq \emptyset$. Define the set $\overline{S} \equiv \left\{S,~\{S\} \right\}$. Then $S \in \overline{S}$ and $S \subseteq \overline{S}$.
+\vskip.5cm
+\item Let $\mathscr U$ be the universe of consideration and $A, ~B \subseteq \mathscr U$. Then \begin{equation} A \bigtriangleup B\equiv (A \cap B') \cup (B\cap A') = (A-B)\cup (B-A).\end{equation}\vskip.5cm
+\item A finite set $S$ has the property that $|S|<+\infty$.
+\item We will use the conventions that $\mathbb N \equiv \{ 1, 2, 3, 4, ...\}$ and $\mathbb W \equiv \{0, 1, 2, 3, ...\}$.
+\item Each of the following sets is not finite:
+$$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}.$$
+\vskip.2cm
+\item $\sim \left(p ~\implies q\right)$ ~~is ~~$p \wedge (\sim q)$; $\sim\left(p \vee q\right)$~~is~~$(\sim p) \wedge (\sim q)$
+\vskip.5cm
+\item My favorite Greek symbols are:
+\begin{enumerate}
+\item $\Upsilon$
+\item $\beta$
+\item $\Gamma$
+\item $\xi$
+\item[4.] $\zeta$
+\end{enumerate}
+The last two are tied.
+\vskip.5cm
+\item Some standard notations:
+\begin{itemize}
+\item $[0,1],~~(0,1),~~[0,1)$
+\item $\int_0^T f(t)~dt$,~~$\displaystyle \int_0^Tf(t)~dt$
+\item $\displaystyle \dfrac{d}{dx}f$;~~$\frac{df}{dx}$
+\item $\lim_{x \to \infty} g(x)$;~~$\displaystyle \lim_{n\to \infty} g(n)$
+\end{itemize}
+\vskip.5cm For $p,q \in \mathbb{Z}$ we say ~$p~|~q$~ if and only iff $\exists~m \in \mathbb Z$ such that $q=p\times m$. If this does not occur, we say ~$p \nmid q$.
+\vskip.5cm
+\item There are environments for Theorems and Proofs:
+\begin{theorem}\label{th:1}
+Suppose that everyone has their wits about them. Then True Grit will the Presidential election.
+\end{theorem}
+\begin{proof}
+ I mean, it really is that obvious.
+\end{proof}
+There are also environments for things like Lemmas and Corollaries. There are no environments for Llamas. Sorry.
+\end{itemize}
+
+\end{document}
