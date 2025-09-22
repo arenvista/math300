@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs}
+\usepackage{latexsym,epsf,epsfig}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry}
+%The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+
+
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+
+\usepackage{hyperref}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\usepackage{graphicx}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 300: Homework 1}
+\author{ Aren Vista }
+\date{\today}
+
+\begin{document}
+\maketitle	
+\pagebreak
+
+% Optional TOC
+% \tableofcontents
+% \pagebreak
+
+%--Paper--
+
+\section*{Question 1}
+\text{In the usual number system. $P: 1+1 = 0$ and $Q: 3 < 5$
+Write the following truth values for expr:}
+\begin{enumerate}
+    \item $P \lor Q$
+    \item $P \land Q$
+    \item $\sim P$
+    \item $P \implies Q$
+    \item $\sim Q \implies \sim P$
+\end{enumerate}
+
+\subsection{Truth Table}
+\begin{center}
+\begin{tabular}{ c c c c c c c }
+  $P$ & $Q$  & $P \lor Q$ & $P \land Q$ & $\sim P$ & $P \implies Q$ & $\sim Q \implies \sim P$ \\
+  T & T & T & T & F & T & T\\ 
+  T & F & T & F & F & F & F\\
+  F & T & T & F & T & T & T\\
+  F & F & F & F & T & T & T\\
+\end{tabular}
+\end{center}
+
+
+\section*{Question 2}
+The Pythagorean theorem from (high school) plane geometry says: If a and b are the legs of a right-angle triangle with c as the hypotenuse, then $c^2 = a^2 + b^2$. Write this statement as $H \implies C$. What are the converse and contra-positive statements?
+
+\begin{enumerate}
+    \item $H$ = "If a and b are the legs of a right-angle triangle with c as the hypotenuse"
+    \item $C$ = "$c^2 = a^2 + b^2$"
+\end {enumerate}
+
+
+\subsection{Writing Statments}
+
+\begin{enumerate}
+    \item Direct: $P: H \implies C$
+        \subitem "If a and b are the legs of a right-angle triangle with c as the hypotenuse" then "$c^2 = a^2 + b^2$"
+    \item Contra-positive: $\sim C \implies \sim H$ : "$c^2 = a^2 + b^2$"
+        \subitem If "$c^2 \neq a^2 + b^2$" then "a and b are NOT the legs of a right-angle triangle with c as the hypotenuse"
+    \item Converse: $C \implies H$
+        \subitem If "$c^2 = a^2 + b^2$" then "a and b are the legs of a right-angle triangle with c as the hypotenuse"
+\end {enumerate}
+
+
+\section*{Question 3}
+\text{Show using truth tables that $\sim (P \land Q) \equiv \sim P \lor \sim Q$}
+
+
+\subsection{Truth Table}
+\begin{center}
+\begin{tabular}{ c c c c c c c }
+    $P$ & $Q$ & $P \land Q$ & $\sim (P \land Q)$ & $\sim P$ & $\sim Q$ & $\sim P \lor \sim Q$\\
+    T & T & T & F &F & F & F\\ 
+    T & F & F & T &F & T & T\\
+    F & T & F & T &T & F & T\\
+    F & F & F & T &T & T & T\\
+\end{tabular}
+\end{center}
+
+\text{Observe columns corresponding to $\sim (P \land Q)$ and  $\sim P \lor \sim Q$ are identical; therefore are logically equivalent.}
+
+\section*{Question 4}
+\text{Show that the statement $(P \lor \sim Q) \lor (Q \lor \sim P )$ is a tautology}
+
+\subsection{Truth Table}
+\begin{center}
+\begin{tabular}{ c c c c c c c }
+    $P$ & $Q$ & $\sim Q$ & $\sim P$ & $P \lor \sim Q$ & $Q \lor \sim P$ & $(P \lor \sim Q) \lor (Q \lor \sim P )$ \\
+    T & T & F & F & T & T & T\\ 
+    T & F & F & F & T & F & T\\
+    F & T & F & T & F & T & T\\
+    F & F & T & T & T & T & T\\
+\end{tabular}
+\end{center}
+
+\text{Observe that the column corresponding to $(P \lor \sim Q) \lor (Q \lor \sim P )$ is always true; therefore is a tautology.}
+
+\section*{Question 5}
+
+\text{Show the addition table for $\mathbb{Z}_5$.}
+
+\subsection{$Z_5$ Addition Table}
+\begin{center}
+\begin{tabular}{lrrrrrr}\toprule
+\cellcolor[HTML]{A8A8A8}x &\cellcolor[HTML]{A8A8A8}0 &\cellcolor[HTML]{A8A8A8}1 &\cellcolor[HTML]{A8A8A8}2 &\cellcolor[HTML]{A8A8A8}3 &\cellcolor[HTML]{A8A8A8}4 \\\midrule
+\cellcolor[HTML]{A8A8A8}0 &0 &1 &2 &3 &4 \\
+\cellcolor[HTML]{A8A8A8}1 &1 &2 &3 &4 &0 \\
+\cellcolor[HTML]{A8A8A8}2 &2 &3 &4 &0 &1 \\
+\cellcolor[HTML]{A8A8A8}3 &3 &4 &0 &1 &2 \\
+\cellcolor[HTML]{A8A8A8}4 &4 &0 &1 &2 &3 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{document}

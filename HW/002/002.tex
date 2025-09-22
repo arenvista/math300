@@ -1,0 +1,149 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs}
+\usepackage{latexsym,epsf,epsfig}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry}
+%The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+
+
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+
+\usepackage{hyperref}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\usepackage{graphicx}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 300: Homework 2}
+\author{ Aren Vista }
+\date{\today}
+
+\begin{document}
+\maketitle	
+\pagebreak
+
+\section{Q1. 4.1}
+Each of the following statements can be recase in the if-then form. Rewrite the following sentences in the form "If A then B"
+\begin{enumerate}
+    \item The product of an odd integer and an even integer is even
+        \begin{itemize}
+            \item H: $x=2k+1, y=2j, k \in \mathbb{Z}, j \in \mathbb{Z}$ 
+            \item C: $x*y = 2l, l \in \mathbb{Z}$
+        \end{itemize}
+    \item The square of an odd integer is odd 
+        \begin{itemize}
+            \item H: If we square an odd integer 
+            \item C: Then result is an odd integer
+        \end{itemize}
+    \item The square of a prime numeber is not a prime 
+        \begin{itemize}
+            \item H: If we square a prime number 
+            \item C: Then the result is not a prime 
+        \end{itemize}
+    \item The product of two negative integers is negative  
+        \begin{itemize}
+            \item If we mutiple two negative integers 
+            \item Then the product will be negative
+        \end{itemize}
+    \item The diagonals of a rhombus are perpendicular
+        \begin{itemize}
+            \item If we have two diagonals from a rhombus 
+            \item Then they will be perpendicular
+        \end{itemize}
+    \item Congruent triangles have the same area
+        \begin{itemize}
+            \item If we have two congruent triangles 
+            \item Then the area of the trianges will be equal
+        \end{itemize}
+    \item The sum of three conseutive integers is divisble by three 
+        \begin{itemize}
+            \item If we have the sum of three conseutive integers
+            \item Then the sum will be divisible by three 
+        \end{itemize}
+\end{enumerate}
+
+\section{Q2. 4.2.k}
+
+Below you will find pairs of statments A and B. For each pair, please indicate which of the following three senetences are true and which are false
+
+Refer to $x$, and $y$ as real numbers 
+
+$$A: x + y = 0, B: x = 0 \land y = 0$$
+
+False by counter-example: 
+\begin{itemize}
+    \item Suppose $x=1,y=-1$
+    \item Observe $1 + (-1) = 0 \land x \neq 0, y \neq 0$
+    \item $\therefore$ the statement is false by counter example $\qed$
+\end{itemize}
+
+\section{Q3. 5.6}
+Prove that the product of two odd integers is odd
+
+\begin{itemize}
+    \item Let $x=2k+1, y=2j+1$ s.t. $k \in \mathbb{Z} \land j \in \mathbb{Z}$
+    \item Observe $x*y = (2k+1)(2j+1) = 4kj +2k +2j + 1$
+    \item Observe $(4kj +2k +2j + 1) = 2(2kj + k + j) + 1$ where $(2kj+k+j) = z, z \in \mathbb{Z}$
+    \item Thus $ x*y = 2z+1$
+    \item $\therefore$ given two odd integers, if multipled together; then the product is odd $\qed$.
+\end{itemize}
+
+
+\section{Q4. 5.13}
+Let x be an integer. Prove if x is odd iff x+1 is even.
+
+\begin{itemize}
+    \item Case 1: $x \in \mathbb{Z}$ and x is odd s.t. $x = 2k+1, k \in \mathbb{Z}$ by definition of odd 
+    \begin{itemize}
+        \item Observe $x+1= 2k+2$
+        \item Thus, $x+1 = 2(k+1), (k+1) \in \mathbb{Z}$ which must be even by definition of even
+        \item $\therefore$ if $x$ is odd then $x+1$ is even $\qed$
+
+    \end{itemize}
+    \item Case 2: $x \in \mathbb{Z}$ and x+1 is even s.t. $x+1 = 2k, k \in \mathbb{Z}$ by definition of even
+    \begin{itemize}
+        \item Observe $x = 2k-1$ 
+        \item Let $c \in \mathbb{Z}, 2c = 2k-2$ s.t. $2k = 2c + 2$
+        \item Subtitute and observe $x = 2k-1 = 2c+1$ which is odd by definition of odd
+        \item $\therefore$ if $x+1$ is even then $x$ is odd $\qed$
+    \end{itemize}
+    \item $\therefore$ By Case 1 and Case 2 x is odd iff x+1 is even $\qed$
+\end{itemize}
+
+\section{Q5. pg 31 p.9}
+Prove or disprove the following statements: 
+
+Let $a,b,c \in \mathbb{Z}$. If $a|c$ and $b|c$, then $(a+b)|c$
+\begin{itemize}
+    \item False by counter-example
+    \item Let $a = b = c = 1$
+    \item Observe $a|c = 1|1 \land b|c=1|1$
+    \item Observe $(1+1) \not | 1 \therefore (a+b) \not | c$ 
+    \item $\therefore$ False by counter-example. $\qed$
+\end{itemize}
+
+Let $a,b,c \in \mathbb{Z}$. If $a|c$, then $(ac)|(bc)$
+\begin{itemize}
+    \item Observe $a|b = ax=b, x \in \mathbb{Z}$
+    \item Multiply both sides by c s.t. $ac(x) = bc$
+    \item This can be rearanged by the defn. of divisiblity $ac(x) = bc = (ac)|(bc)$
+    \item $\therefore$ Given $a,b,c \in \mathbb{Z}$. If $a|c$, then $(ac)|(bc) \qed$ 
+
+\end{itemize}
+
+
+\end{document}
+
