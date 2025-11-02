@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.9)  20 OCT 2025 21:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.9)  1 NOV 2025 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**template.tex
-(./template.tex
+**005.tex
+(./005.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -448,9 +448,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box57
-)
-(./template.aux)
-\openout1 = `template.aux'.
+) (./005.aux)
+\openout1 = `005.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
@@ -470,7 +469,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count311
 \scratchdimen=\dimen259
@@ -527,14 +527,13 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 34.
-(./template.out) (./template.out)
+(./005.out) (./005.out)
 \@outlinefile=\write3
-\openout3 = `template.out'.
+\openout3 = `005.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
@@ -559,59 +558,41 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 64--80
 
- []
+[2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
+[3]
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--80
-
- []
-
-
-
-[2]
-
-[3] (./template.aux)
+[4] (./005.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 2E033E930054871CA2B0E8F90CBFFD6D;480.
+Package rerunfilecheck Info: File `005.out' has not changed.
+(rerunfilecheck)             Checksum: D9F7D044641ABFCE5C89A03A6B78CA0F;384.
  ) 
 Here is how much of TeX's memory you used:
- 11752 strings out of 475171
- 177328 string characters out of 5767096
- 589797 words of memory out of 5000000
- 34551 multiletter control sequences out of 15000+600000
- 567676 words of font info for 73 fonts, out of 8000000 for 9000
+ 11749 strings out of 475171
+ 177136 string characters out of 5767096
+ 593772 words of memory out of 5000000
+ 34547 multiletter control sequences out of 15000+600000
+ 567671 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,545b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,540b,506s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.
 pfb>
-Output written on template.pdf (3 pages, 122166 bytes).
+Output written on 005.pdf (4 pages, 113415 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
