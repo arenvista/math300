@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs}
+\usepackage{latexsym,epsf,epsfig}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry}
+%The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+
+
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+
+\usepackage{hyperref}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\usepackage{graphicx}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 300: Homework 7}
+\author{ Aren Vista }
+\date{\today}
+
+\begin{document}
+\maketitle	
+\pagebreak
+
+\section*{Question 1: 24.1}
+Answer the following: 
+\begin{itemize}
+    \item Is it a function? Explain if not.
+    \item What is the domain and range?
+    \item Is it injunctive? Explain if not.
+    \item What is the inverse function?
+\end{itemize}
+\subsection*{24.1d}
+\[ f = \{(x,y) | x,y \in \mathbb{Z}; xy=0\} \]
+
+Observe $f(x)$ contains $(x,y)$ s.t. $x,y \in \mathbb{Z} \land xy=0$ 
+
+Let $x=0$. Observe $(0,1),(0,2) \in f(x) \implies f(x)$ is not a function.
+\subsection*{24.1h}
+\[ f = \{(x,y) | x,y \in \mathbb{Z}; x|y \} \]
+
+    Let $x=1$
+
+    Observe 1 divides any value in $\mathbb{Z}$ thus $f$ is not a function.
+
+\section*{Question 2: 24.4}
+Let $A=\{1,2\}$ and $B=\{3,4\}$. Write down all functions $A \rightarrow B$. Indicate which are injective and which are subjective
+
+Bijective:
+$$f_1 = {(1,3),(2,4)}$$
+$$f_2 = {(2,3),(1,4)}$$
+
+
+Neither:
+$$f_3 = {(1,3),(2,3)}$$
+$$f_4 = {(1,4),(2,4)}$$
+
+\section*{Question 3: 24.8}
+Let $A=\{1,2,3,4\}$ and $B=\{5,6,7\}$. Let $f$ be a the relation:
+\[ f = \{ (1,5), (2,5), (3,6), (?,?)\} \]
+Presume elements of $f$ are of member $A \times B$
+Such that the following conditions are met (independently).
+\begin{itemize}
+    \item a. The relation $f$ is not a function
+    \item b. The relation is a function from $A \rightarrow B$ but is not onto
+    \item c. The relation is a function from $A \rightarrow B$ and is onto
+\end{itemize}
+
+\subsection*{a. The relation $f$ is not a function}
+    \begin{flushleft}
+        Presume elements of $f$ are of member $A \times B \implies (?,?) = (a,b) ~a \in A, b \in B$ \\
+        For $f$ to not be a function make $a \in (a,b), a \neq 4$ \\
+        Any element of $a \in A, a \neq 4$ will satisfy the condition. 
+    \end{flushleft}
+\subsection*{b. The relation is a function from $A \rightarrow B$ but is not onto}
+    \begin{flushleft}
+        Presume elements of $f$ are of member $A \times B \implies (?,?) = (a,b) ~a \in A, b \in B$ \\
+        For $f$ to be a function make $a \in (a,b), a = 4$ \\
+        For $f$ to not be onto make $b \in (a,b), b \neq 7$ \\
+        Any element of $b \neq 7, a = 4$ will satisfy the condition. 
+    \end{flushleft}
+\subsection*{c. The relation is a function from $A \rightarrow B$ and is onto}
+        Presume elements of $f$ are of member $A \times B \implies (?,?) = (a,b) ~a \in A, b \in B$ \\
+        For $f$ to be a function make $a \in (a,b), a = 4$ \\
+        For $f$ to be onto make $b \in (a,b), b = 7$ \\
+        Any element of $b = 7, a = 4$ will satisfy the condition. 
+
+\section*{Question 4}
+
+\begin{flushleft}
+Within $\mathbb{R}$, let $A=\{x : 0 < x < 1\}$ and $B=\{x : 0 < x < \inf \}$ 
+
+Define $f: A \rightarrow B$ by $f(x) = \frac{x}{1-x}$
+
+Show $f$ is a bijection and find it's inverse function
+\end{flushleft}
+
+\subsection*{$f$ is injective}
+    \begin{flushleft}
+        Let $a_1, a_2, \in A$
+        $$\frac{a_1}{1-a_1} = \frac{a_2}{1-a_2}$$
+        Cross multiply and simplify:
+        $${a_1 - a_1a_2} = {a_2 - a_1a_2}$$
+        Simplify:
+        $${a_1} = {a_2}$$
+        Thus $f$ is injective
+    \end{flushleft}
+\subsection*{$f$ is surjective}
+    \begin{flushleft}
+        Let $a \in A$ and $b \in B$
+        $$b = f(a)$$
+        Subsitute
+        $$b = \frac{a}{1-a}$$
+        Multiply by $1-a$
+        $$b(1-a) = {a}$$
+        Simplify
+        $$b-ab = {a}$$
+        Group $a$ terms
+        $$b = a + ab$$
+        Factor $a$ terms
+        $$b = a(1 + b)$$
+        Isolate $a$
+        $$\frac{b}{1+b} = a$$
+        Thus $f$ is surjective 
+
+        The $f^{-1}: B \rightarrow A = f^{-1}(b): \frac{b}{1+b} = a$
+    \end{flushleft}
+    As $f$ is injective and surjective it is bijective
+\section*{Question 5}
+Suppose $f: A \rightarrow B$ and $g: B \rightarrow C$ are functions. 
+Show the following
+\begin{itemize}
+    \item a. $gof$ is an injection implies f is an injection
+    \item b. $gof$ is an surjection implies g is an surjection
+\end{itemize}
+
+Let $a \in A, b \in B, c \in C$.
+
+\subsection*{a. $gof$ is an injection implies f is an injection} 
+    \begin{flushleft}
+        If $gof$ is an injection, then: 
+        \[ g(f(a_1)) = g(f(a_2)) \implies a_1 = a_2 \]
+        Thus
+        \[ f(a_1) = f(a_2) \implies a_1 = a_2 \]
+        Therefore f is an injection
+    \end{flushleft}
+\subsection*{b. $gof$ is an surjection implies g is an surjection}
+    \begin{flushleft}
+        If $gof$ is an surjection, then: 
+        \[ \forall ~c \in range(gof) \implies ~\exists ~a \ni g(f(a)) = c \equiv g(b) = c \]
+
+        Observe $g(b) = c \implies \exists ~b \in B \ni \forall ~c, c=g(b)$ Thus $g$ is surjective.
+    \end{flushleft}
+
+\end{document}
+

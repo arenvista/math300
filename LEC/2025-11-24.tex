@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs}
+\usepackage{latexsym,epsf,epsfig}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry}
+%The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+
+
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+
+\usepackage{hyperref}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\usepackage{graphicx}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 300: Dem Images and Stuff}
+\author{ Aren Vista }
+\date{\today}
+
+\begin{document}
+\maketitle	
+\pagebreak
+
+\section*{Forward and Inverse Images}
+
+\subsection*{Properties of Forward Images}
+\begin{flushleft}
+    Let $f: X \rightarrow Y$ be a function
+
+    Given $A \subset X$ define:
+
+    Forward image of $A$ under $f$
+    \[ f(A) = \{f(a) | a \in A \} \]
+
+    Consider $f(x): x^2 : \mathbb{R} \rightarrow \mathbb{R}$
+
+    \[ A = \{1\} \implies f(A) = \{f(1)\} = \{1\} \]
+
+    \[ B = \{0,1,-1\} \implies f(B) = \{f(0),f(-1),f(1)\} = \{0,1\} \]
+
+
+    Let $A,B \subset X$
+
+    \begin{enumerate}
+        \item $A \subset B \implies f(A) \subset f(B)$
+        \item $f(A \cup B) = f(A) \cup f(B)$
+        \item $f(A \cap B) \subset f(A) \cap f(B)$
+    \end{enumerate}
+
+    \subsubsection*{Proof of 2}
+    Let $y \in f(A \cup B)$
+
+    $\leftrightarrow y = f(x), x \in (A \cup B)$
+
+    $\leftrightarrow$ Where $x \in A \lor x \in B$
+
+    $\leftrightarrow$ Thus $y = f(x), x \in A \lor y = f(x), x \in B$
+
+    $\leftrightarrow$ Thus $y \in f(A) \lor y \in f(B)$
+
+    \subsubsection*{Proof of 3}
+    Let $f(x) = x^2: \mathbb{R} \rightarrow \mathbb{R}$
+
+    $A = \{-1\} \implies f(A) = \{-1\}$
+    $B = \{-1\} \implies f(B) = \{1\}$
+
+    $A \cap B = \emptyset \implies f(A \cap B) = \emptyset \neq f(A) \cap f(B) = \{1\}$
+
+
+    \subsection*{Properties of Inverse Images}
+    Given $C \subset Y$, the inverse image of c under f is given by
+    \[ f^{-1}(C) = \{x \in X | f(x) \in C\} \]
+
+    Example: $f: \mathbb{R} \implies \mathbb{R}, f(x) = x^2$
+
+    Take ${C \subset \mathbb{R}}$ then $f^{-1}(C) = \{x \in \mathbb{R} | f(x) \in C \}$
+
+    Let $C = \{0\} \implies f^{-1}(C) = \{ x \in \mathbb{R} | f(x) \in \{0\}\}$
+
+    \begin{enumerate}
+        \item $A \subset B \implies f^{-1}(A) \subset f^{-1}(B)$
+        \item $f^{-1}(A \cup B) = f(A) \cup f(B)$
+        \item $f^{-1}(A \cap B) = f(A) \cap f(B)$
+        \item $f^{-1}(A-B) = f(A)-f(B)$
+    \end{enumerate}
+\end{flushleft}
+
+\section*{Counting Principles}
+\begin{flushleft}
+    If $A$ is a nonempty finite set, then: $|A|$ is the number of distinct objects.
+
+    Example: 
+    $A = \{1, a\}, B = \{1,a,5\}$
+
+    $A \subset B \implies |A| \leq |B|$
+
+    If $A \subset B$ and $|A| = |B| \implies A=B$
+
+    \subsection{Thm:}
+    Suppose $A$ and $B$ are two finite empty sets.
+
+    \begin{enumerate}
+        \item If $A \subset B$ then $|A| \leq |B|$
+        \item If $A \subset B$ and $|A|=|B|$ then $A=B$
+    \end{enumerate}
+
+
+\end{flushleft}
+
+\end{document}
+
